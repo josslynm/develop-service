@@ -51,5 +51,6 @@ h1.titulo{
 .navegacion_principal a{
     color: var(--blanco);
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
