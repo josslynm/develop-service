@@ -32,7 +32,8 @@ h1.titulo{
 }
 
 .contenedor{
-    width: 120rem; /*Acorta o ensancha el largo*/
+    /* si es que hay 120rem */
+    max-width: 120rem; /*Acorta o ensancha el largo*/
 /* margin: TOP RIGTH BOT LEFT */
     margin: 0 auto ; /* En que posicion se coloca un elemento */
 /* Si solo hay 2 valores sobreentiende que 0 es top y bot */
@@ -45,7 +46,18 @@ h1.titulo{
 .navegacion_principal{
     
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+   
+    .navegacion_principal{
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
 }
 
 .navegacion_principal a{
@@ -64,9 +76,3 @@ h1.titulo{
 
 }
 
-/* @media (min-width: 480px){
-A partir de 480px-> 480+ todo lo que este dentro de estas llaves
-768px tablets
-}*/
-
-mq
