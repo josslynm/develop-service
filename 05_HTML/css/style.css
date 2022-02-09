@@ -43,7 +43,7 @@ h1.titulo{
 }
 
 .navegacion_principal{
-    padding: 1rem;
+    
     display: flex;
     justify-content: space-between;
 }
@@ -51,6 +51,22 @@ h1.titulo{
 .navegacion_principal a{
     color: var(--blanco);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1rem;
 }
 
+/* pseudo clases */
+/* a:hover va junto */
+.navegacion_principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+
+}
+
+/* @media (min-width: 480px){
+A partir de 480px-> 480+ todo lo que este dentro de estas llaves
+768px tablets
+}*/
+
+mq
