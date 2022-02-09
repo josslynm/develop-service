@@ -1,0 +1,55 @@
+:root{
+   /*Almacena variables*/
+    --blanco:#ffffff;
+    --oscuro:#212121;
+    --primario: #ffc107; 
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
+html{
+    font-size: 62.5;
+}
+body{
+    font-size: 16px;
+    /* 1 rem=10px*/
+    font-family: 'Istok Web', sans-serif;
+}
+.titulo{
+    text-align: center;
+    font-size: 3.5rem; 
+    font-family: 'Permanent Marker', cursive; 
+    font-weight: 400;
+}
+h1.titulo{
+    text-align: center;
+    font-size: 3.8rem; 
+    font-family: 'Permanent Marker', cursive;
+}
+
+.titulo span{
+    font-size: 1.5rem;
+}
+
+.contenedor{
+    width: 120rem; /*Acorta o ensancha el largo*/
+/* margin: TOP RIGTH BOT LEFT */
+    margin: 0 auto ; /* En que posicion se coloca un elemento */
+/* Si solo hay 2 valores sobreentiende que 0 es top y bot */
+}
+
+.nav_bg{
+    background-color: var(--secundario);
+}
+
+.navegacion_principal{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion_principal a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
