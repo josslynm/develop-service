@@ -44,16 +44,16 @@ h1.titulo{
 }
 
 .navegacion_principal{
-    
+
     display: flex;
     flex-direction: column;
-    
     align-items: center;
 }
 
 @media (min-width: 768px) {
    
     .navegacion_principal{
+
         flex-direction: row;
         justify-content: space-between;
        
@@ -61,6 +61,7 @@ h1.titulo{
 }
 
 .navegacion_principal a{
+    
     color: var(--blanco);
     text-decoration: none;
     font-size: 1.8rem;
