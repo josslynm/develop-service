@@ -18,12 +18,14 @@ body{
 .titulo{
     text-align: center;
     font-size: 3.5rem; 
+    color: var(--blanco);
     font-family: 'Permanent Marker', cursive; 
     font-weight: 400;
 }
 h1.titulo{
     text-align: center;
     font-size: 3.8rem; 
+    color: var(--oscuro);
     font-family: 'Permanent Marker', cursive;
 }
 
@@ -61,7 +63,7 @@ h1.titulo{
 }
 
 .navegacion_principal a{
-    
+
     color: var(--blanco);
     text-decoration: none;
     font-size: 1.8rem;
@@ -75,5 +77,13 @@ h1.titulo{
     background-color: var(--primario);
     color: var(--oscuro);
 
+}
+
+.hero{
+    background-image: url(../imagenes/fondo-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450;
+    padding: 20px;
 }
 
