@@ -5,22 +5,27 @@
     --primario: #ffc107; 
     --secundario: #0097a7;
     --gris: #757575;
+    --fondito: #d6d6da; 
 }
 
 html{
     font-size: 62.5;
     /* gracias a esto el padding no afecta al tamaño */
-    box-sizing: border-box;
+    box-sizing: border-box; /* hack para box model */
 }
 
+/* * Indica que aplica para todo el contenido*/
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: inherit; 
   }
 
 body{
     font-size: 16px;
-    /* 1 rem=10px*/
     font-family: 'Istok Web', sans-serif;
+    /* degradado de colores( direccion, color 0%, color 100%) */
+    /* background-image: linear-gradient(to top, #DFE9F3 0%, var(--blanco) 100%); */
+    background-image: linear-gradient(to top, var(--fondito) 0%, var(--blanco) 100%);
+
 }
 .titulo{
     text-align: center;
@@ -40,12 +45,15 @@ h1.titulo{
     font-size: 1.5rem;
 }
 
+/* Clase contenedor para centrar en el sitio */
 .contenedor{
     /* si es que hay 120rem */
-    max-width: 120rem; /*Acorta o ensancha el largo*/
-/* margin: TOP RIGTH BOT LEFT */
+    max-width: 90rem; /*Acorta o ensancha el largo*/
+    /* margin: TOP RIGTH BOT LEFT */
     margin: 0 auto ; /* En que posicion se coloca un elemento */
-/* Si solo hay 2 valores sobreentiende que 0 es top y bot */
+    /* Si solo hay 2 valores sobreentiende que 0 es top y bot */
+    
+    
 }
 
 .boton_call{
@@ -97,13 +105,14 @@ h1.titulo{
     font-size: 1.8rem;
     font-weight: 700;
     padding: 1rem;
-    text-align: center;
+    text-align: center; /* centra el texto en el contenedor */ 
 }
 
 /* pseudo clases */
 /* a:hover va junto */
 .navegacion_principal a:hover{
     background-color: var(--primario);
+    /* Rellena el 100% de contenido de color amarillo */
     width: 100%;
     color: var(--oscuro);
     
@@ -121,12 +130,24 @@ h1.titulo{
 }
 }
 
+.sombra{
+
+    -webkit-box-shadow: -2px 4px 7px -1px rgba(0,0,0,0.69);
+    -moz-box-shadow: -2px 4px 7px -1px rgba(0,0,0,0.69);
+    box-shadow: -2px 4px 7px -1px rgba(0,0,0,0.69);
+    
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 .heroo{
     background-image: url(../imagenes/fondo-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 1.5rem;
 }
 
 .contenido_hero{
