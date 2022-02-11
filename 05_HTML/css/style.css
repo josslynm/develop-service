@@ -9,7 +9,14 @@
 
 html{
     font-size: 62.5;
+    /* gracias a esto el padding no afecta al tamaño */
+    box-sizing: border-box;
 }
+/* * aplica para todos los elemntos de css */
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
 body{
     font-size: 16px;
     /* 1 rem=10px*/
