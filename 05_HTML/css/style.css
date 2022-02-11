@@ -48,6 +48,26 @@ h1.titulo{
 /* Si solo hay 2 valores sobreentiende que 0 es top y bot */
 }
 
+.boton_call{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 1rem;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;  
+}
+
+@media (min-width: 768px) {
+    .boton_call{
+        width: auto;
+    }
+}
+
 .nav_bg{
     background-color: var(--secundario);
 }
@@ -57,6 +77,7 @@ h1.titulo{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 @media (min-width: 768px) {
@@ -76,14 +97,28 @@ h1.titulo{
     font-size: 1.8rem;
     font-weight: 700;
     padding: 1rem;
+    text-align: center;
 }
 
 /* pseudo clases */
 /* a:hover va junto */
 .navegacion_principal a:hover{
     background-color: var(--primario);
+    width: 100%;
     color: var(--oscuro);
+    
 
+}
+
+@media (min-width: 768px) {
+
+    .navegacion_principal a:hover{
+    background-color: var(--primario);
+    width: auto;
+    color: var(--oscuro);
+    
+
+}
 }
 
 .heroo{
