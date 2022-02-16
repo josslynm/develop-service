@@ -176,3 +176,43 @@ h1.titulo{
     font-size: 1.3rem ;
 }
 
+/* servicios */
+@media (min-width: 768px) {
+    /* si supera los 768 entonces presenta en columnas */
+    .servicios{
+        display: grid;
+        /* 100%/3= 33.3% || 1fr 1fr 1fr || repeat(3, 1fr */
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+}
+
+.servicio{
+    
+    display: flex;
+    flex-direction: column; /* nos coloca en columna */
+    align-items: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight:bold;
+
+}
+
+.servicio p{
+    line-height: 2; /* Interlineado de texto*/
+    text-align: center;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    /* flex-direction: row; por default */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
